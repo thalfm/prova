@@ -52,7 +52,7 @@ class Filme
     }
 
     /**
-     * @return \DateTime
+     * @return \DateInterval
      */
     public function getDuracao(): \DateInterval
     {
@@ -60,7 +60,7 @@ class Filme
     }
 
     /**
-     * @param \DateTime $duracao
+     * @param \DateInterval $duracao
      * @return Filme
      */
     public function setDuracao(\DateInterval $duracao): Filme
