@@ -62,16 +62,6 @@ class Sessao
     }
 
     /**
-     * @param \DateTime $horario
-     * @return Sessao
-     */
-    public function setHorario(\DateTime $horario): Sessao
-    {
-        $this->horario = $horario;
-        return $this;
-    }
-
-    /**
      * @return float
      */
     public function getPreco(): float
@@ -93,6 +83,14 @@ class Sessao
     public function getFilme(): Filme
     {
         return $this->filme;
+    }
+
+    /**
+     * @return string
+     */
+    public function getHorarioTerminoFilme()
+    {
+        return $this->horario->add($this->filme->getDuracao())->format('d/m/Y H:i:s');
     }
 
 }

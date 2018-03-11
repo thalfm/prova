@@ -40,4 +40,11 @@ class SessaoIntegrationTest extends \PHPUnit\Framework\TestCase
         $expected = 20.0;
         $this->assertEquals($expected, $actual);
     }
+
+    public function testRetornoDoHorarioDoTerminoDoFilme()
+    {
+        $actual = $this->sessao->getHorarioTerminoFilme();
+        $expected = '10/03/2018 20:30:00';
+        $this->assertEquals($expected, $actual);
+    }
 }
