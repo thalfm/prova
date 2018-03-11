@@ -24,6 +24,7 @@ class Sessao
 
     /**
      * Sessao constructor.
+     * @param \DateTime $horario
      * @param Sala $sala
      * @param Filme $filme
      */
